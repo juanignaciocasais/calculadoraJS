@@ -45,7 +45,7 @@
     background-color: #84a9ac;
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 400px) {
     .botonera {
         grid-template-columns: repeat(85px);
     }
