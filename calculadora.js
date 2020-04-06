@@ -32,7 +32,8 @@ keys.addEventListener('click', (event) => {
     }
 
     if (target.classList.contains('borrar')) {
-        console.log('boton', target.value);
+        deleteDigit();
+        updateDisplay();
         return;
     }
 
@@ -108,6 +109,12 @@ if (waitingForSecondOperand === true) {
 
 console.log(calculator);
 }  
+
+function deleteDigit() {
+    if (calculator.displayValue.length == 1 || calculator.displayValue === '0') {
+        calculator.displayValue =  '0';
+    }else calculator.displayValue = calculator.displayValue.slice(0, -1);
+}
 
 function resetCalculator() {
     calculator.displayValue = '0';
