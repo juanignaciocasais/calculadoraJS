@@ -16,6 +16,7 @@
     grid-gap: 0.5rem;
     grid-template-columns: repeat(4,1fr);
     grid-auto-rows: minmax(90px, auto);
+    overflow: hidden;
 }
 
 .boton {
@@ -45,9 +46,19 @@
     background-color: #84a9ac;
 }
 
+@media screen and (max-height: 667px) {
+    .botonera{
+        grid-auto-rows: minmax(75px, auto);
+    }
+}
+
 @media screen and (max-width: 400px) {
     .botonera {
         grid-template-columns: repeat(85px);
+    }
+
+    boton {
+        font-size: 30px;
     }
 
     .contenedor{
