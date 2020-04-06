@@ -42,10 +42,6 @@
     grid-row: span 2;
 }
 
-.boton:hover{
-    background-color: #84a9ac;
-}
-
 @media screen and (max-height: 667px) {
     .botonera{
         grid-auto-rows: minmax(75px, auto);
